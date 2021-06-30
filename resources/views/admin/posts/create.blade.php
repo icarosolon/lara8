@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('admin.layouts.app')
 @section('title', 'Criar Post')
 @section('content')
     <form action="{{ route('posts.store') }}" method="post" enctype="multipart/form-data">

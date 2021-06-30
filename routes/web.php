@@ -16,6 +16,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -28,3 +33,5 @@ Route::put('posts/{id}', [PostController::class, 'update'])->name('posts.update'
 Route::get('posts/{id}', [PostController::class, 'show'])->name('posts.show');
 Route::post('posts', [PostController::class, 'store'])->name('posts.store');
 Route::delete('posts/{id}', [PostController::class, 'destroy'])->name('posts.destroy');
+
+require __DIR__ . '/auth.php';

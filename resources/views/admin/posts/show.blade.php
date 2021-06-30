@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('admin.layouts.app')
 @section('title', 'Mostrando Post')
 @section('content')
     <h1>Mostrando Post Único</h1>

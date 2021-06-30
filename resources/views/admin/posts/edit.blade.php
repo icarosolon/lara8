@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('admin.layouts.app')
 @section('title', 'Editar Post')
 @section('content')
     <h1>Editar o Post <strong>{{ $post->title }}</strong></h1>
